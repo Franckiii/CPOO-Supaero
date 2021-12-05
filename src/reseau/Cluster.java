@@ -22,7 +22,10 @@ public class Cluster extends Ville {
     private int clusterProducteur; // numéro associé au cluster producteur de ce cluster consommateur
     private ArrayList<Cluster> route; // liste des clusters (possiblement vide) que doit emprunter l'énergie pour
                                       // aller du cluster producteur au cluster consommateur
-
+    
+    public int getClusterNumber(){
+        return this.clusterNumber;
+    }
     /**
      * 
      * @param clusterNumber     numéro associé à ce cluster consommateur
